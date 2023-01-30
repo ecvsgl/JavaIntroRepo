@@ -1,0 +1,15 @@
+package edu.sabanciuniv.it524;
+
+import edu.sabanciuniv.it524.domain.Student;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		Student stu = new Student(0,"Efe","Cavusoglu");
+	}
+
+}

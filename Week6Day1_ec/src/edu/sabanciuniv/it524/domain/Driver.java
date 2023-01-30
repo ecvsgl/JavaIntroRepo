@@ -1,0 +1,16 @@
+package edu.sabanciuniv.it524.domain;
+
+public class Driver {
+	
+	private String driverName;
+	
+	public Driver(String name) {
+		this.driverName=name;
+	}
+
+	public void drive(Vehicle anyVehicle) 
+	{
+		System.out.println(this.driverName + " is driving -- >");
+		anyVehicle.go();
+	}
+}

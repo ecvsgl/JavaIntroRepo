@@ -1,0 +1,11 @@
+package edu.sabanciuniv.it524.dao;
+
+import edu.sabanciuniv.it524.domain.Student;
+
+public class StudentDAO {
+
+	public void insert(Student player1) {
+		
+	}
+
+}

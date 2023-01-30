@@ -1,0 +1,38 @@
+package edu.sabanciuniv.it524.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import edu.sabanciuniv.it524.domain.Student;
+
+public class StudentDAO {
+
+
+	public static final String url = "jdbc:mysql://localhost/it524"; 
+	public static final String username = "root";
+	public static final String password = "12561256aA";
+	
+	private Connection connection;
+	
+	public StudentDAO() 
+	{
+		try {
+			this.connection = 
+					DriverManager.getConnection(url,username,password);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public void insert(Student player1) {
+		try {
+			PreparedStatement ps = this.connection.prepareStatement("insert into students (name,lastname) values (?,?)");
+			ps.setString(1,  player1.getName());
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,24 @@
+package edu.sabanciuniv.it524.dao;
+
+import edu.sabanciuniv.it524.domain.Student;
+
+public class StudentDAO {
+
+	private Connection connection;
+	
+	public StudentDAO() 
+	{
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	public void insert(Student player1) {
+		
+	}
+
+}
