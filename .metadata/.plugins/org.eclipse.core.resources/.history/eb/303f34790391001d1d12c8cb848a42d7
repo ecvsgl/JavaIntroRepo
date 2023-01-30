@@ -1,0 +1,5 @@
+package edu.sabanciuniv.it524.dao;
+
+public class StudentDAO {
+
+}

@@ -1,0 +1,27 @@
+package edu.sabanciuniv.it524;
+
+import edu.sabanciuniv.it524.domain.Student;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		Student player1 = new Student(0,"Cristiano","Ronaldo");
+		Student player2 = new Student(0,"Lionel","Messi");
+		Student player3 = new Student(0,"Ahmet","Demirelli");
+
+		StudentDAO sDao = new StudentDAO();
+		//DATA ACCESS OBJECT = DAO , DATABASEDEN OBJE ALIP KOYAN NESNEMİZ OLCAK. 
+		
+		sDao.insert(player1);
+		sDao.insert(player2);
+		sDao.insert(player3);
+
+		
+	
+	}
+
+}
